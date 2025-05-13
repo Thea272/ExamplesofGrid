@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples of Grid</title>
+    <link rel="stylesheet" href="./css/exgri.css">
+
+</head>
+<header id="title"> <h1>Los Ejemplos de Grid</h1></header>
+
+<body>
+    <!-- -Example 1 ------------->
+    <section id="uno" class="section">
+        <h1>Example 1</h1>
+        <p> 1. To define a Grid use display:grid or display:inline-grid on the parent element. You can then create a
+            grid
+            using the grid-template-columns and grid-template-rows properties.
+
+            I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is a
+            shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+
+            All direct children of the parent now become grid items and the auto-placement algorithm lays them out, one
+            in each grid cell. Creating extra rows as needed.</p>
+
+
+        <p> 1. Para definir una cuadrícula, utiliza display:grid o display:inline-grid en el elemento padre. Luego,
+            puedes
+            crear una cuadrícula usando las propiedades grid-template-columns y grid-template-rows.Estoy utilizando la
+            propiedad grid-gap para crear un espacio entre mis columnas y filas de 10px. Esta propiedad es una forma
+            abreviada de grid-column-gap y grid-row-gap, por lo que puedes establecer estos valores
+            individualmente.Todos los hijos directos del padre ahora se convierten en elementos de la cuadrícula y el
+            algoritmo de colocación automática los distribuye, uno en cada celda de la cuadrícula, creando filas
+            adicionales según sea necesario.</p>
+
+        <div class="wrapper1">
+            <div class="box1 a">A</div>
+            <div class="box1 b">B</div>
+            <div class="box1 c">C</div>
+            <div class="box1 d">D</div>
+            <div class="box1 e">E</div>
+            <div class="box1 f">F</div>
+        </div>
+    </section>
+
+    <!-- Example2 -->
+    <section id="dos">
+        <h1>Example 2</h1>
+        <p> 2. Ubicación basada en líneas que abarca pistas con la palabra clave span. También podemos abarcar usando la
+            palabra
+            clave span. Este ejemplo crea el mismo diseño que el del ejemplo 5. Estoy usando la palabra clave span en
+            lugar
+            de
+            dirigirme a la Línea de la Cuadrícula por número. También estoy usando los valores por defecto para el fin
+            de
+            fila y
+            columna, que es abarcar 1.</p>
+        <p>
+            2. Line-based placement spanning tracks with the span keyword
+            We can also span using the span keyword. This example creates the same layout as the one in example 5. I am
+            using the span keyword rather than targeting the Grid Line by number. I am also using the defaults for row
+            and
+            column end, which is to span 1.
+        </p>
+        <div class="wrapper2">
+            <div class="box2 a">A</div>
+            <div class="box2 b">B</div>
+            <div class="box2 c">C</div>
+            <div class="box2 d">D</div>
+        </div>
+
+    </section>
+    <!-- example 3 -->
+    <section id="tres">
+        <h1>Example 3</h1>
+        <p>3. Uso de la notación de repetición-En el ejemplo 8 repetimos las mismas definiciones para crear nuestra
+            cuadrícula con líneas nombradas. Podríamos ahorrar algo de escritura usando la notación de repetición. Los
+            valores para repetir son el número de veces que deseas que la expresión se repita y luego la expresión.</p>
+
+        <p>3. Using repeat notation-In example 8 we repeated the same definitions to create our grid with named lines.
+            We could save some typing
+            by using repeat notation. The values for repeat are the number of times you want the expression to repeat
+            and then the expression. </p>
+
+        <div class="wrapper3">
+            <div class="box3 a">A</div>
+            <div class="box3 b">B</div>
+            <div class="box3 c">C</div>
+            <div class="box3 d">D</div>
+            <div class="box3 e">E</div>
+        </div>
+    </section>
+
+    <!-- example 4  -->
+    <section id="cuatro">
+        <h1>Example 4</h1>
+        <p> 4. A grid item as a new positioning context
+            You can absolutely position items inside an area of the Grid. In this example I have used position: relative
+            on my .content Grid Area. I can then position the four arrow images using absolute positioning inside that
+            area, and it works as you would expect.</p>
+
+        <p>4. Un elemento de cuadrícula como un nuevo contexto de posicionamiento Puedes posicionar elementos de forma
+            absoluta dentro de un área de la cuadrícula. En este ejemplo, he utilizado position: relative en mi área de
+            cuadrícula .content. Luego puedo posicionar las cuatro imágenes de flecha utilizando posicionamiento
+            absoluto dentro de esa área, y funciona como esperarías.</p>
+
+        <div class="wrapper4">
+            <div class="box4 header4">Header</div>
+            <div class="box4 sidebar4">Sidebar</div>
+            <div class="box4 content4">Content
+                <br /> The four arrows are inline images inside the content area.
+                <img src="http://gridbyexample.com/examples/code/arrow-top-left.png" alt="top left4" class="topleft4" />
+                <img src="http://gridbyexample.com/examples/code/arrow-top-right.png" alt="top right4"
+                    class="topright4" />
+                <img src="http://gridbyexample.com/examples/code/arrow-bottom-left.png" alt="bottom left4"
+                    class="bottomleft4" />
+                <img src="http://gridbyexample.com/examples/code/arrow-bottom-right.png" alt="bottom right4"
+                    class="bottomright4" />
+            </div>
+            <div class="box4 footer4">Footer</div>
+        </div>
+    </section>
+
+    <!-- example 5 -->
+    <section id="cinco">
+        <h1>Example 5</h1>
+        <p>5. Grid auto-flow column
+            The default behavior of Grid Auto Flow is to layout the elements by row, working along the row until there
+            are no more slots then moving on to the next row. If a row is not declared then an implicit grid track will
+            be created to hold the items. You can change this behavior by using the grid-auto-flow property. The default
+            value is row but you can also
+            specify column. The elements will then be laid out column by column, adding new columns if needed.</p>
+
+        <p>5. Flujo automático de columnas en cuadrículaEl comportamiento predeterminado del Flujo Automático de
+            Cuadrícula es organizar los elementos en filas, trabajando a lo largo de la fila hasta que no haya más
+            espacios y luego pasando a la siguiente fila. Si no se declara una fila, se creará una pista de cuadrícula
+            implícita para contener los elementos.Puedes cambiar este comportamiento utilizando la propiedad
+            grid-auto-flow. El valor predeterminado es fila, pero también puedes especificar columna. Los elementos se
+            organizarán entonces columna por columna, añadiendo nuevas columnas si es necesario.</p>
+
+        <div class="wrapper5">
+            <div class="box5">1</div>
+            <div class="box5">2</div>
+            <div class="box5">3</div>
+            <div class="box5">4</div>
+            <div class="box5">5</div>
+            <div class="box5">6</div>
+            <div class="box5">7</div>
+            <div class="box5">8</div>
+            <div class="box5">9</div>
+            <div class="box5">10</div>
+            <div class="box5">11</div>
+            <div class="box5">12</div>
+        </div>
+    </section>
+
+    <!-- example 6 -LA CAJA QUE SE AUMENTA SEGÚN AUMENTO EL %----------------------------->
+    <section id="seis">
+        <h1>Example 6</h1>
+        <p>6. Multiple tracks in a track-list with auto-fill and minmax()
+            The repeat syntax can take a track-list rather than a single value, this means you can repeat a more complex
+            track-list. You can use minmax() in this track list, here I am making the max of my larger tracks 2fr, and
+            the smaller ones 1fr. This means that the larger tracks will have more of any leftover space
+            assigned.Currently requires Chrome Canary</p>
+        <p>6. Múltiples pistas en una lista de pistas con auto-fill y minmax() La sintaxis de repetición puede tomar una
+            lista de pistas en lugar de un solo valor, lo que significa que puedes repetir una lista de pistas más
+            compleja. Puedes usar minmax() en esta lista de pistas, aquí estoy haciendo que el máximo de mis pistas más
+            grandes sea 2fr, y las más pequeñas 1fr. Esto significa que las pistas más grandes tendrán más del espacio
+            sobrante asignado.Actualmente requiere Chrome Canary</p>
+
+        <div class="wrapper6">
+            <div class="box6 box16">1</div>
+            <div class="box6 box26">2</div>
+            <div class="box6">3</div>
+            <div class="box6">4</div>
+            <div class="box6">5</div>
+            <div class="box6">6</div>
+            <div class="box6">7</div>
+            <div class="box6">8</div>
+            <div class="box6">9</div>
+            <div class="box6">10</div>
+            <div class="box6">11</div>
+            <div class="box6">12</div>
+        </div>
+    </section>
+
+    <!-- example 7 ------------------>
+    <section id="siete">
+        <h1>Example 7</h1>
+        <p>7. Subgrid on columns and rows
+            To define a subgrid in both dimensions - columns and rows - use the value subgrid on a grid item of the
+            parent as the value of grid-template-columns and grid-template-rows. The nested grid is now tied to the
+            number of grid tracks and dimensions of the parent grid.</p>
+
+        <p>7. Subred en columnas y filas Para definir una subred en ambas dimensiones - columnas y filas - utiliza el
+            valor subred en un elemento de cuadrícula del padre como el valor de grid-template-columns y
+            grid-template-rows. La cuadrícula anidada ahora está vinculada al número de pistas de cuadrícula y
+            dimensiones de la cuadrícula padre.</p>
+
+        <div class="wrapper7">
+            <div class="box7 a">A</div>
+            <div class="box7 b">B</div>
+            <div class="box7 c">C</div>
+            <div class="box7 d">
+                <!--------------- e, f, g ------>
+                <div id="e" class="box7 e">E</div>
+                <div id="f" class="box7 f">F</div>
+                <div id="g" class="box7 g">G</div>
+            </div>
+        </div>
+    </section>
+    <!-- example 8 ---------------------------------------------------------------------------->
+    <section id="ocho">
+        <h1>Example 8</h1>
+        <p>8. Aligning the grid with space-around and space-between. 
+            In this example I am creating a four column track grid, the tracks have absolute sizes and in total are
+            smaller than the area of the grid container. This time I have used: align-content: space-around
+            justify-content: space-between. This means that extra space is distributed around the tracks and our desired
+            10 pixel gutter gets more space. However so do any areas which span more than one track as where they cross a gutter 
+            they gain this extra space too.</p>
+
+        <p>8. Alineando la cuadrícula con espacio-around y espacio-between. En este ejemplo estoy creando una cuadrícula
+            de cuatro columnas, las pistas tienen tamaños absolutos y en total son más pequeñas que el área del
+            contenedor de la cuadrícula. Esta vez he utilizado: align-content: space-around justify-content:
+            space-between Esto significa que el espacio extra se distribuye alrededor de las pistas y nuestro deseado
+            margen de 10 píxeles recibe más espacio. Sin embargo, también lo hacen las áreas que abarcan más de una
+            pista, ya que donde cruzan un margen, también ganan este espacio extra.</p>
+
+            
+<div id="octavo" class="wrapper8 aligned">
+    <div class="box8 item1">One</div>
+    <div class="box8 item2">Two</div>
+    <div class="box8 item3">Three</div>
+    <div class="box8 item4">Four</div>
+    <div class="box8 item5">Five</div>
+</div>
+    </section>
+
+</body>
+
+</html>
